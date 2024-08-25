@@ -6,7 +6,7 @@ flock -n 9 || exit 1
   tmp2=""
   tmp3=""
 
-  tm=`date +"%d/"%m/%Y:%H`  
+  tm=`date +"%d/%b/%Y:%H"`  
 
   tmp=`grep "\$tm" access.log | awk '{print \$1}' | sort | uniq -c | sort -nr | head -1`
 
